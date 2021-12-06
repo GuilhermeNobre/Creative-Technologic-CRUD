@@ -12,9 +12,20 @@ namespace CRUD_EMPRESAS
 {
     public partial class Form1 : Form
     {
+        Registro rg = new Registro();  
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            rg.Show();  
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Environment.Exit(0);
         }
     }
 }

@@ -1,0 +1,12 @@
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\bin\Debug\CRUD-EMPRESAS.exe.config
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\bin\Debug\CRUD-EMPRESAS.exe
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\bin\Debug\CRUD-EMPRESAS.pdb
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.csproj.AssemblyReference.cache
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.csproj.SuggestedBindingRedirects.cache
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Form1.resources
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Properties.Resources.resources
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.csproj.GenerateResource.cache
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.csproj.CoreCompileInputs.cache
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.exe
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.pdb
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Registro.resources
