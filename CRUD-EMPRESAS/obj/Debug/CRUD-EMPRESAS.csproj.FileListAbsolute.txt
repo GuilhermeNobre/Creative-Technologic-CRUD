@@ -10,3 +10,5 @@ E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESA
 E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.exe
 E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.pdb
 E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Registro.resources
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.fatura.resources
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Login.resources

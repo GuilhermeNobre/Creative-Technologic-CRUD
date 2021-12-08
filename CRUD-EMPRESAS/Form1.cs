@@ -13,6 +13,7 @@ namespace CRUD_EMPRESAS
     public partial class Form1 : Form
     {
         Registro rg = new Registro();  
+        fatura fatura = new fatura(); 
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +26,14 @@ namespace CRUD_EMPRESAS
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Environment.Exit(0);
+           Login obje = new Login();
+           obje.Show();
+           this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fatura.Show();
         }
     }
 }

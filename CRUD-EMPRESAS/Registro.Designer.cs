@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.searchBar = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -47,10 +49,10 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,6 +60,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.searchBar);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtAddress);
@@ -81,12 +85,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Canal Registro";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(4, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 18);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Procurar por Nome";
+            // 
+            // searchBar
+            // 
+            this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBar.Location = new System.Drawing.Point(147, 191);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(483, 24);
+            this.searchBar.TabIndex = 8;
+            this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
+            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 191);
+            this.dateTimePicker1.Location = new System.Drawing.Point(400, 15);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(214, 20);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.Size = new System.Drawing.Size(230, 20);
+            this.dateTimePicker1.TabIndex = 9;
             // 
             // label7
             // 
@@ -105,7 +128,7 @@
             this.txtAddress.Location = new System.Drawing.Point(78, 161);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(552, 24);
-            this.txtAddress.TabIndex = 16;
+            this.txtAddress.TabIndex = 7;
             this.txtAddress.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
             // 
             // rbtnFemale
@@ -114,7 +137,7 @@
             this.rbtnFemale.Location = new System.Drawing.Point(479, 124);
             this.rbtnFemale.Name = "rbtnFemale";
             this.rbtnFemale.Size = new System.Drawing.Size(61, 17);
-            this.rbtnFemale.TabIndex = 15;
+            this.rbtnFemale.TabIndex = 6;
             this.rbtnFemale.TabStop = true;
             this.rbtnFemale.Text = "Feminio";
             this.rbtnFemale.UseVisualStyleBackColor = true;
@@ -147,7 +170,7 @@
             this.txtID.Location = new System.Drawing.Point(78, 120);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(200, 24);
-            this.txtID.TabIndex = 11;
+            this.txtID.TabIndex = 4;
             // 
             // label3
             // 
@@ -166,7 +189,7 @@
             this.txtEmail.Location = new System.Drawing.Point(400, 80);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(230, 24);
-            this.txtEmail.TabIndex = 9;
+            this.txtEmail.TabIndex = 3;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
@@ -185,7 +208,7 @@
             this.txtFunction.Location = new System.Drawing.Point(78, 80);
             this.txtFunction.Name = "txtFunction";
             this.txtFunction.Size = new System.Drawing.Size(200, 24);
-            this.txtFunction.TabIndex = 7;
+            this.txtFunction.TabIndex = 2;
             // 
             // label2
             // 
@@ -204,7 +227,7 @@
             this.txtFName.Location = new System.Drawing.Point(400, 41);
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(230, 24);
-            this.txtFName.TabIndex = 5;
+            this.txtFName.TabIndex = 1;
             this.txtFName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // rbtnMale
@@ -213,7 +236,7 @@
             this.rbtnMale.Location = new System.Drawing.Point(400, 125);
             this.rbtnMale.Name = "rbtnMale";
             this.rbtnMale.Size = new System.Drawing.Size(73, 17);
-            this.rbtnMale.TabIndex = 3;
+            this.rbtnMale.TabIndex = 5;
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Masculino";
             this.rbtnMale.UseVisualStyleBackColor = true;
@@ -234,7 +257,7 @@
             this.txtName.Location = new System.Drawing.Point(78, 41);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(200, 24);
-            this.txtName.TabIndex = 1;
+            this.txtName.TabIndex = 0;
             // 
             // button1
             // 
@@ -264,6 +287,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funções";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(6, 167);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 50);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "EXPORTAR";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
@@ -274,7 +312,7 @@
             this.button3.Location = new System.Drawing.Point(6, 119);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 43);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 3;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -289,7 +327,7 @@
             this.button2.Location = new System.Drawing.Point(6, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 47);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 2;
             this.button2.Text = "ATUALIZAR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -300,22 +338,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 242);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(771, 277);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(6, 167);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 50);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "EXPORTAR";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // Registro
             // 
@@ -363,5 +387,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox searchBar;
     }
 }

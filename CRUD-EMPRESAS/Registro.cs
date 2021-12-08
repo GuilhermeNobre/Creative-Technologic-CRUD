@@ -34,7 +34,7 @@ namespace CRUD_EMPRESAS
         // Botões e Grid que executam as Querrys
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtName.Text=="" || txtFName.Text == "" || txtFunction.Text == "" || txtID.Text == "" || txtEmail.Text == "" || txtID.Text == "")
+            if (txtName.Text=="" || txtFName.Text == "" || txtFunction.Text == "" || txtID.Text == "" || txtEmail.Text == "" || txtID.Text == "" || txtAddress.Text == "")
             {
                 MessageBox.Show("Por favor, preencha todos os campos");
             }
@@ -140,6 +140,16 @@ namespace CRUD_EMPRESAS
             }
         }
 
+        private void searchBar_TextChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            adpt = new SqlDataAdapter("select * from employee where Employee_Name like '%" + searchBar.Text + "%' ", con);
+            dt = new DataTable();
+            adpt.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+
 
 
         //Metodos criados pelo usario
@@ -221,6 +231,9 @@ namespace CRUD_EMPRESAS
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

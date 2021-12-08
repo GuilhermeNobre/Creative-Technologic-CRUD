@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -39,9 +38,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,16 +62,6 @@
             this.panel1.Size = new System.Drawing.Size(898, 100);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CRUD_EMPRESAS.Properties.Resources.swoosh_people_in_rototion_4460ld__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 101);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(898, 424);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
@@ -80,7 +70,7 @@
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button6.Image = global::CRUD_EMPRESAS.Properties.Resources.icons8_google_sites_50;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(728, 30);
+            this.button6.Location = new System.Drawing.Point(747, 30);
             this.button6.Name = "button6";
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button6.Size = new System.Drawing.Size(135, 65);
@@ -97,7 +87,7 @@
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Image = global::CRUD_EMPRESAS.Properties.Resources.icons8_histórico_médico_50;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(587, 30);
+            this.button5.Location = new System.Drawing.Point(597, 30);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button5.Size = new System.Drawing.Size(135, 65);
@@ -114,7 +104,7 @@
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Image = global::CRUD_EMPRESAS.Properties.Resources.icons8_exclusive_product_50;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(446, 30);
+            this.button4.Location = new System.Drawing.Point(451, 30);
             this.button4.Name = "button4";
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button4.Size = new System.Drawing.Size(135, 65);
@@ -131,7 +121,7 @@
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Image = global::CRUD_EMPRESAS.Properties.Resources.icons8_shopping_basket_adicionar_48;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(305, 30);
+            this.button3.Location = new System.Drawing.Point(308, 30);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(135, 65);
@@ -148,7 +138,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Image = global::CRUD_EMPRESAS.Properties.Resources.icons8_fatura_48;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(164, 30);
+            this.button2.Location = new System.Drawing.Point(160, 30);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(135, 65);
@@ -156,6 +146,7 @@
             this.button2.Text = "   FATURA";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -165,7 +156,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Image = global::CRUD_EMPRESAS.Properties.Resources.icons8_usuário_50;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(23, 30);
+            this.button1.Location = new System.Drawing.Point(11, 30);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(135, 65);
@@ -199,6 +190,16 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CRUD_EMPRESAS.Properties.Resources.swoosh_people_in_rototion_4460ld__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 101);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(898, 424);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,9 +215,9 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
