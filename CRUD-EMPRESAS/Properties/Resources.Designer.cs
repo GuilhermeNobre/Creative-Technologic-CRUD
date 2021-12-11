@@ -133,6 +133,16 @@ namespace CRUD_EMPRESAS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo {
+            get {
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap swoosh_people_in_rototion_4460ld__1_ {
             get {
                 object obj = ResourceManager.GetObject("swoosh-people-in-rototion-4460ld (1)", resourceCulture);
