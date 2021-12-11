@@ -66,7 +66,7 @@
             this.txtName.Location = new System.Drawing.Point(88, 361);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(256, 24);
-            this.txtName.TabIndex = 3;
+            this.txtName.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -97,7 +97,7 @@
             this.rbtA.Location = new System.Drawing.Point(88, 394);
             this.rbtA.Name = "rbtA";
             this.rbtA.Size = new System.Drawing.Size(60, 17);
-            this.rbtA.TabIndex = 8;
+            this.rbtA.TabIndex = 1;
             this.rbtA.TabStop = true;
             this.rbtA.Text = "TIPO A";
             this.rbtA.UseVisualStyleBackColor = true;
@@ -109,7 +109,7 @@
             this.rbtB.Location = new System.Drawing.Point(162, 396);
             this.rbtB.Name = "rbtB";
             this.rbtB.Size = new System.Drawing.Size(60, 17);
-            this.rbtB.TabIndex = 9;
+            this.rbtB.TabIndex = 2;
             this.rbtB.TabStop = true;
             this.rbtB.Text = "TIPO B";
             this.rbtB.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@
             this.rbtC.Location = new System.Drawing.Point(88, 417);
             this.rbtC.Name = "rbtC";
             this.rbtC.Size = new System.Drawing.Size(60, 17);
-            this.rbtC.TabIndex = 10;
+            this.rbtC.TabIndex = 3;
             this.rbtC.TabStop = true;
             this.rbtC.Text = "TIPO C";
             this.rbtC.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             this.button4.Location = new System.Drawing.Point(132, 529);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 43);
-            this.button4.TabIndex = 13;
+            this.button4.TabIndex = 9;
             this.button4.Text = "EXPORTAR";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -151,7 +151,7 @@
             this.button3.Location = new System.Drawing.Point(17, 530);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 43);
-            this.button3.TabIndex = 14;
+            this.button3.TabIndex = 8;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -166,7 +166,7 @@
             this.button2.Location = new System.Drawing.Point(132, 483);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 43);
-            this.button2.TabIndex = 12;
+            this.button2.TabIndex = 7;
             this.button2.Text = "ATUALIZAR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -181,7 +181,7 @@
             this.button1.Location = new System.Drawing.Point(17, 483);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 43);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 6;
             this.button1.Text = "SALVAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -203,7 +203,7 @@
             this.searchBar.Location = new System.Drawing.Point(162, 450);
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(182, 24);
-            this.searchBar.TabIndex = 15;
+            this.searchBar.TabIndex = 5;
             this.searchBar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // rbtD
@@ -213,7 +213,7 @@
             this.rbtD.Location = new System.Drawing.Point(161, 419);
             this.rbtD.Name = "rbtD";
             this.rbtD.Size = new System.Drawing.Size(61, 17);
-            this.rbtD.TabIndex = 17;
+            this.rbtD.TabIndex = 4;
             this.rbtD.TabStop = true;
             this.rbtD.Text = "TIPO D";
             this.rbtD.UseVisualStyleBackColor = true;

@@ -51,7 +51,7 @@
             this.txtName.Location = new System.Drawing.Point(78, 23);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(160, 20);
-            this.txtName.TabIndex = 1;
+            this.txtName.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -59,7 +59,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(244, 23);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(327, 142);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -90,7 +90,7 @@
             this.txtValue.Location = new System.Drawing.Point(78, 51);
             this.txtValue.Name = "txtValue";
             this.txtValue.Size = new System.Drawing.Size(160, 20);
-            this.txtValue.TabIndex = 7;
+            this.txtValue.TabIndex = 1;
             // 
             // button1
             // 
@@ -102,7 +102,7 @@
             this.button1.Location = new System.Drawing.Point(15, 77);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 41);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 3;
             this.button1.Text = "SALVAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -117,7 +117,7 @@
             this.button2.Location = new System.Drawing.Point(129, 77);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 41);
-            this.button2.TabIndex = 9;
+            this.button2.TabIndex = 4;
             this.button2.Text = "EDITAR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -132,7 +132,7 @@
             this.button3.Location = new System.Drawing.Point(15, 124);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 41);
-            this.button3.TabIndex = 10;
+            this.button3.TabIndex = 5;
             this.button3.Text = "EXCLUIR";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -147,7 +147,7 @@
             this.button4.Location = new System.Drawing.Point(129, 124);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 41);
-            this.button4.TabIndex = 11;
+            this.button4.TabIndex = 6;
             this.button4.Text = "EXPORTAR";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -169,7 +169,7 @@
             this.searchBar.Location = new System.Drawing.Point(143, 171);
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(428, 24);
-            this.searchBar.TabIndex = 20;
+            this.searchBar.TabIndex = 7;
             this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
             // 
             // menuStrip1

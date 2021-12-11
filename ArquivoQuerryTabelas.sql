@@ -40,4 +40,19 @@ select * from products;
 insert into products values('Casa Smart', 'A');
 
 
+create table reports
+(
+report_id int primary key identity (1,1),
+name_report varchar(50),
+obs_report varchar(50)
+);
+
+select * from reports;
+insert into reports values('João Da Silva', 'Dormindo no expediente');
+
 truncate table Employee
+truncate table Fature
+truncate table products
+truncate table reports;
+
+select * from LoginUsers;

@@ -34,14 +34,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.searchBar = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtObs = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.searchBar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,7 +64,7 @@
             this.txtName.Location = new System.Drawing.Point(65, 19);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(254, 24);
-            this.txtName.TabIndex = 4;
+            this.txtName.TabIndex = 1;
             // 
             // button3
             // 
@@ -76,7 +76,7 @@
             this.button3.Location = new System.Drawing.Point(242, 278);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 43);
-            this.button3.TabIndex = 9;
+            this.button3.TabIndex = 3;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -91,7 +91,7 @@
             this.button1.Location = new System.Drawing.Point(12, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 41);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 1;
             this.button1.Text = "SALVAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -109,9 +109,29 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(325, 248);
-            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reportador";
+            // 
+            // searchBar
+            // 
+            this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBar.Location = new System.Drawing.Point(126, 215);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(193, 24);
+            this.searchBar.TabIndex = 3;
+            this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(8, 218);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 18);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Procurar nome:";
             // 
             // label2
             // 
@@ -131,7 +151,7 @@
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(308, 138);
-            this.txtObs.TabIndex = 7;
+            this.txtObs.TabIndex = 2;
             // 
             // button2
             // 
@@ -143,7 +163,7 @@
             this.button2.Location = new System.Drawing.Point(127, 278);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 41);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 2;
             this.button2.Text = "ATUALIZAR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -175,28 +195,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 327);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(325, 139);
-            this.dataGridView1.TabIndex = 20;
+            this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(8, 218);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 18);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Procurar nome:";
-            // 
-            // searchBar
-            // 
-            this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBar.Location = new System.Drawing.Point(126, 215);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(193, 24);
-            this.searchBar.TabIndex = 10;
-            this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
             // 
             // Reports
             // 
