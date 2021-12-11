@@ -14,3 +14,4 @@ E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESA
 E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Login.resources
 E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD-EMPRESAS.csproj.ResolveComReference.cache
 E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.produto.resources
+E:\3.Uniube\1° Semestre\PI 1\CRUD-EMPRESAS\CRUD-EMPRESAS\obj\Debug\CRUD_EMPRESAS.Reports.resources

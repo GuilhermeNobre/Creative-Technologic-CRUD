@@ -52,7 +52,6 @@
             // txtUName
             // 
             this.txtUName.Location = new System.Drawing.Point(7, 111);
-            this.txtUName.Multiline = true;
             this.txtUName.Name = "txtUName";
             this.txtUName.Size = new System.Drawing.Size(174, 20);
             this.txtUName.TabIndex = 0;
@@ -73,7 +72,6 @@
             // txtPssd
             // 
             this.txtPssd.Location = new System.Drawing.Point(7, 165);
-            this.txtPssd.Multiline = true;
             this.txtPssd.Name = "txtPssd";
             this.txtPssd.PasswordChar = '*';
             this.txtPssd.Size = new System.Drawing.Size(174, 20);

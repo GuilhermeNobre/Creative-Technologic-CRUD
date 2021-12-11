@@ -15,6 +15,7 @@ namespace CRUD_EMPRESAS
         Registro rg = new Registro();  
         fatura fatura = new fatura(); 
         produto produto = new produto(); 
+        Reports reports = new Reports();    
         public Form1()
         {
             InitializeComponent();
@@ -70,10 +71,15 @@ namespace CRUD_EMPRESAS
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            reports.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

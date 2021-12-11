@@ -24,11 +24,14 @@ namespace CRUD_EMPRESAS
         int month_id;
 
 
+
         public fatura()
         {
             InitializeComponent();
             con = new SqlConnection(path);
             display();
+            button2.Enabled = false;
+            button3.Enabled = false;
         }
 
         public void clear()
@@ -89,6 +92,7 @@ namespace CRUD_EMPRESAS
             month_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             txtName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtValue.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+
         }
 
         private void fatura_Load(object sender, EventArgs e)
@@ -119,6 +123,8 @@ namespace CRUD_EMPRESAS
             month_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             txtName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtValue.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            button2.Enabled = true;
+            button3.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e) // Excluir 
@@ -196,6 +202,11 @@ namespace CRUD_EMPRESAS
             adpt.Fill(dt);
             dataGridView1.DataSource = dt;
             con.Close();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -273,5 +273,10 @@ namespace CRUD_EMPRESAS
         {
 
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
