@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Microsoft.Office.Interop.Excel;
 
 namespace CRUD_EMPRESAS
 {
@@ -19,7 +20,7 @@ namespace CRUD_EMPRESAS
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adpt;
-        DataTable dt;
+        System.Data.DataTable dt;
         int ID;
         
         public Registro()
@@ -144,12 +145,47 @@ namespace CRUD_EMPRESAS
         {
             con.Open();
             adpt = new SqlDataAdapter("select * from employee where Employee_Name like '%" + searchBar.Text + "%' ", con);
-            dt = new DataTable();
+            dt = new System.Data.DataTable();
             adpt.Fill(dt);
             dataGridView1.DataSource = dt;
             con.Close();
         }
 
+        private void button4_Click(object sender, EventArgs e) // Excell Export 
+        {
+            try
+            {
+                Microsoft.Office.Interop.Excel.Application Excell = new Microsoft.Office.Interop.Excel.Application();
+                Workbook wb = Excell.Workbooks.Add(XlSheetType.xlWorksheet);
+                Worksheet ws = (Worksheet)Excell.ActiveSheet;
+                Excell.Visible = true;
+
+                for (int j = 2; j <= dataGridView1.Rows.Count; j++)
+                {
+                    for (int i = 1; i <= 1; i++)
+                    {
+                        ws.Cells[j, i] = dataGridView1.Rows[j - 2].Cells[i - 1].Value;
+                    }
+                }
+
+                for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
+                {
+                    ws.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
+                }
+
+                for (int i = 0; i < dataGridView1.Columns.Count - 1; i++)
+                {
+                    for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                    {
+                        ws.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+            }
+            catch (Exception)
+            { 
+
+            }
+        }
 
 
         //Metodos criados pelo usario
@@ -168,7 +204,7 @@ namespace CRUD_EMPRESAS
         {
             try
             {
-                dt = new DataTable();
+                dt = new System.Data.DataTable();
                 con.Open();
                 adpt = new SqlDataAdapter("select * from employee", con);
                 adpt.Fill(dt);
@@ -231,7 +267,9 @@ namespace CRUD_EMPRESAS
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+
+
+        private void Registro_Load(object sender, EventArgs e)
         {
 
         }

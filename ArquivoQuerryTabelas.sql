@@ -29,7 +29,15 @@ insert into Fature values('January', 35670);
 insert into Fature values('Febuary', 41411);
 
 
+create table products
+(
+product_Id int primary key identity (1,1),
+name_product varchar(50),
+type_product varchar(50)
+);
 
+select * from products;
+insert into products values('Casa Smart', 'A');
 
 
 truncate table Employee
