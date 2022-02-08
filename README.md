@@ -3,7 +3,7 @@ Criação de um projeto CRUD (Cadastro, Registro, Update, Delete) de uma empresa
 
 ![Logo da company](/CorelFiles/LogoMD.jpg)
 
-## Guia 
+# Guia 
 No caso foi utilizado o template e o código foi rodando usando um IP interno gerador pelo Live Server, uma extensão do VSC (Visual Studio Code) para poder gerar um HTML responsivo e dinâmico. 
 
 
