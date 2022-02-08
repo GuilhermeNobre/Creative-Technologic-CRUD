@@ -35,7 +35,7 @@ Para utilizar o código é necessário instalar os seguintes softwares em sua in
 
 **Pode ser utilizado outro sistema mananger de SQL porém este foi o mesmo utilizado em desenvolvimento**
 
-Após a instalação do projeto, é necessário criar a database conforme as querrys e criar a database e as tabelas.
+Após a instalação do projeto, é necessário criar a database conforme as querrys e criar e as tabelas.
 
 Em seguida é necessário abrir o projeto através do VS realizar a mudança dos PATH de cada código para adequar a sua instância de computador.
 
